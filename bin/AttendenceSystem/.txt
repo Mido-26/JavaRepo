@@ -1,0 +1,97 @@
+📚 Problem: School Attendance System
+
+Build a small console-based system to track attendance for students in multiple classes using Java.
+🏗️ Requirements:
+
+    Create a Student class with:
+
+        id, name
+
+        Record of attendance per day (store date → status like "Present" or "Absent") using a HashMap<String, String>
+
+    Create a Classroom class that:
+
+        Has a className
+
+        Holds a list of Student objects (ArrayList<Student>)
+
+        Can add/remove students
+
+        Can mark attendance for a specific date for each student
+
+    Create a School class that:
+
+        Holds multiple classrooms (HashMap<String, Classroom>)
+
+        Can search a student by ID across all classes
+
+        Can display full attendance for a student
+
+🎯 Tasks to Perform:
+
+Implement methods that:
+
+    Add students to a class
+
+    Remove a student
+
+    Mark a student as present or absent for a given date
+
+    View attendance record for one student
+
+    List all students in a class
+
+    Transfer a student from one class to another
+
+💡 Data Structures Involved:
+Requirement	Structure
+Attendance per student	HashMap<String, String>
+List of students in class	ArrayList<Student>
+Classes in school	HashMap<String, Classroom>
+Unique student IDs	Use Set<String> to check duplicates (optional)
+🧪 Example Simulation:
+
+Welcome to School Attendance System
+
+1. Add Student
+2. Remove Student
+3. Mark Attendance
+4. View Attendance
+5. Transfer Student
+6. List Students in Class
+7. Exit
+
+> 1
+Enter Class: Grade7A
+Enter Name: Mariam
+Student added with ID: S101
+
+> 3
+Enter Class: Grade7A
+Enter Date (yyyy-mm-dd): 2025-08-06
+Marking attendance...
+Mariam: Present
+
+🔧 Optional Extensions:
+
+    Validate duplicate student names
+
+    Use Queue for managing attendance entry
+
+    Use Set to store unique student IDs school-wide
+
+    Save data to file (bonus)
+
+✅ Goal:
+
+This project helps you:
+
+    Practice working with Java Collections
+
+    Implement class structure logically
+
+    Think in terms of relationships and basic operations
+
+    Practice data manipulation without heavy abstraction
+
+Would you like me to provide the starter code skeleton for this solution?
